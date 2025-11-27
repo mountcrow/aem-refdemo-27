@@ -9,7 +9,7 @@ footer {
   color: #ffffff;
 }
 
-footer .footer > div {
+footer .footer>div {
   margin: auto;
   max-width: 1200px;
   padding: 40px 24px 24px;
@@ -34,8 +34,8 @@ footer .footer a:hover {
   color: var(--main-accent-color);
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
+@media (width >=900px) {
+  footer .footer>div {
     padding: 50px 32px;
   }
 }
