@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Info Block Test</title>
+    <link rel="stylesheet" href="blocks/product-info/product-info.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        /* Mocking some basic styles */
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Product Info Block Test</h1>
+
+    <div class="product-info">
+        <div>
+            <div>
+                <picture>
+                    <img src="https://via.placeholder.com/300" alt="Test Product Image">
+                </picture>
+            </div>
+            <div>Test Product Name</div>
+            <div>This is a short description of the test product. It has some features and benefits.</div>
+            <div>$99.99</div>
+        </div>
+        <div>
+            <div>
+                <picture>
+                    <img src="https://via.placeholder.com/300" alt="Another Product">
+                </picture>
+            </div>
+            <div>Another Product</div>
+            <div>Description for another product.</div>
+            <div>$149.50</div>
+        </div>
+    </div>
+
+    <script type="module">
+        import decorate from './blocks/product-info/product-info.js';
+
+        const block = document.querySelector('.product-info');
+        await decorate(block);
+    </script>
+</body>
+
+</html>
