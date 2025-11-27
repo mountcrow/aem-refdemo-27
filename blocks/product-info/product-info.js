@@ -9,19 +9,27 @@ export default function decorate(block) {
         const productItem = document.createElement('div');
         productItem.className = 'product-item';
 
-        // Expecting 5 columns: Image, Alt, Name, Description, Price
-        if (row.children.length >= 5) {
-            const imageDiv = row.children[0];
-            const altDiv = row.children[1];
-            const nameDiv = row.children[2];
-            const descDiv = row.children[3];
-            const priceDiv = row.children[4];
+        // Determine column mapping based on available columns
+        let imageDiv, altDiv, nameDiv, descDiv, priceDiv;
 
+        if (row.children.length >= 5) {
+            // 5 columns: Image, Alt, Name, Description, Price
+            [imageDiv, altDiv, nameDiv, descDiv, priceDiv] = row.children;
+        } else if (row.children.length >= 4) {
+            // 4 columns (Legacy): Image, Name, Description, Price
+            [imageDiv, nameDiv, descDiv, priceDiv] = row.children;
+            // altDiv is undefined, will be handled below
+        }
+
+        if (imageDiv && nameDiv && descDiv && priceDiv) {
             // Image
             imageDiv.className = 'product-image';
             const img = imageDiv.querySelector('img');
             if (img) {
-                const altText = altDiv.textContent.trim() || img.alt;
+                let altText = img.alt;
+                if (altDiv && altDiv.textContent.trim()) {
+                    altText = altDiv.textContent.trim();
+                }
                 const optimizedPic = createOptimizedPicture(img.src, altText, false, [{ width: '300' }]);
                 imageDiv.innerHTML = '';
                 imageDiv.append(optimizedPic);
