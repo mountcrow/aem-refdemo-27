@@ -1,22 +1,22 @@
 {
   "mappings": [
-    "/content/aem-refdemo-27/language-masters/en:/",
-    "/content/aem-refdemo-27/language-masters/en/:/en/",
-    "/content/aem-refdemo-27/language-masters/fr/:/fr/",
-    "/content/aem-refdemo-27/language-masters/fr:/fr",
-    "/content/aem-refdemo-27/language-masters/es/:/es/",
-    "/content/aem-refdemo-27/language-masters/es:/es",
-    "/content/aem-refdemo-27/language-masters/ja/:/ja/",
-    "/content/aem-refdemo-27/language-masters/ja:/ja",
-    "/content/aem-refdemo-27/language-masters/de/:/de/",
-    "/content/aem-refdemo-27/language-masters/de:/de",
-    "/content/aem-refdemo-27/configuration:/.helix/config.json",
-    "/content/aem-refdemo-27/metadata:/metadata.json",
-    "/content/aem-refdemo-27/redirects:/redirects.json",
-    "/content/aem-refdemo-27/placeholders:/placeholders.json"
+    "/content/reference-eds-ue/language-masters/en:/",
+    "/content/reference-eds-ue/language-masters/en/:/en/",
+    "/content/reference-eds-ue/language-masters/fr/:/fr/",
+    "/content/reference-eds-ue/language-masters/fr:/fr",
+    "/content/reference-eds-ue/language-masters/es/:/es/",
+    "/content/reference-eds-ue/language-masters/es:/es",
+    "/content/reference-eds-ue/language-masters/ja/:/ja/",
+    "/content/reference-eds-ue/language-masters/ja:/ja",
+    "/content/reference-eds-ue/language-masters/de/:/de/",
+    "/content/reference-eds-ue/language-masters/de:/de",
+    "/content/reference-eds-ue/configuration:/.helix/config.json",
+    "/content/reference-eds-ue/metadata:/metadata.json",
+    "/content/reference-eds-ue/redirects:/redirects.json",
+    "/content/reference-eds-ue/placeholders:/placeholders.json"
   ],
   "includes": [
-    "/content/aem-refdemo-27/",
-    "/content/dam/aem-refdemo-27/"
+    "/content/reference-eds-ue/",
+    "/content/dam/reference-eds-ue/"
   ]
 }
